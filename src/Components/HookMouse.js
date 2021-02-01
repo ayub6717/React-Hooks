@@ -16,7 +16,7 @@ function HookMouse() {
     }, [])
     return (
         <div>
-           <h3> Hooks X - {x} Y - {y} </h3>
+           <h3> Hooks X - {x} Y - {y}</h3>
         </div>
     )
 }
