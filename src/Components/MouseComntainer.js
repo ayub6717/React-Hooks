@@ -1,14 +1,15 @@
-import React, {useState} from 'react'
+  
+import React, { useState } from 'react'
 import HookMouse from './HookMouse'
 
-function MouseComntainer() {
-    const [display, setdisplay] = useState(true)
-    return (
-        <div>
-            <button onClick={() => setdisplay(!display)} >Toggle</button>
-            {display && <HookMouse />}
-        </div>
-    )
+function MouseContainer() {
+	const [display, setDisplay] = useState(true)
+	return (
+		<div>
+			<button onClick={() => setDisplay(!display)}>Toggle display</button>
+			{display && <HookMouse />}
+		</div>
+	)
 }
 
-export default MouseComntainer
+export default MouseContainer
