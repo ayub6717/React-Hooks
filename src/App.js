@@ -1,5 +1,7 @@
+import React from 'react';
 import './App.css';
-import DataFetching from './Components/DataFetching';
+import ComponentA from './Components/UseContext/ComponentA';
+// import DataFetching from './Components/DataFetching';
 // import IntervalHookCounter from './Components/IntervalHookCounter';
 // import HookCounter from './Components/HookCounter';
 // import HookCounterFour from './Components/HookCounterFour';
@@ -9,6 +11,9 @@ import DataFetching from './Components/DataFetching';
 // import HookMouse from './Components/HookMouse';
 // import MouseComntainer from './Components/MouseComntainer';
 
+export const UserContext = React.createContext()
+export const profileContext = React.createContext()
+
 function App() {
   return (
     <div className="App">
@@ -16,11 +21,17 @@ function App() {
       <HookCounterTwo /> <br/>
       <HookCounterTree /> <br/>
       <HookCounterFour /> <br/>
-      <HookUseEffect /> <br/> */}
-      {/* <HookMouse /> */}
-      {/* <MouseComntainer /> */}
-      {/* <IntervalHookCounter /> */}
-      <DataFetching />
+      <HookUseEffect /> <br/>
+      <HookMouse />
+      <MouseComntainer />
+      <IntervalHookCounter />
+      <DataFetching /> */}
+
+      <UserContext.Provider value={"AYUB"}>
+      <profileContext.Provider value={"something about user"}>
+          <ComponentA />
+        </profileContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
