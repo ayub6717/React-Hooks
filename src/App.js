@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import CounterOne from './Components/UseReducer/CounterOne';
+import CounterTwo from './Components/UseReducer/CounterTwo'; 
+// import CounterOne from './Components/UseReducer/CounterOne';
 // import ComponentA from './Components/UseContext/ComponentA';
 // import DataFetching from './Components/DataFetching';
 // import IntervalHookCounter from './Components/IntervalHookCounter';
@@ -33,8 +34,9 @@ function App() {
           <ComponentA />
         </profileContext.Provider>
       </UserContext.Provider> 
-      */}
       <CounterOne />
+      */}
+      <CounterTwo />
     </div>
   );
 }
