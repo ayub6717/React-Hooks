@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ComponentA from './Components/UseContext/ComponentA';
+import CounterOne from './Components/UseReducer/CounterOne';
+// import ComponentA from './Components/UseContext/ComponentA';
 // import DataFetching from './Components/DataFetching';
 // import IntervalHookCounter from './Components/IntervalHookCounter';
 // import HookCounter from './Components/HookCounter';
@@ -25,13 +26,15 @@ function App() {
       <HookMouse />
       <MouseComntainer />
       <IntervalHookCounter />
-      <DataFetching /> */}
+      <DataFetching /> 
 
       <UserContext.Provider value={"AYUB"}>
       <profileContext.Provider value={"something about user"}>
           <ComponentA />
         </profileContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> 
+      */}
+      <CounterOne />
     </div>
   );
 }
