@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import './App.css';
-import CounterTwo from './Components/UseReducer/CounterTwo'; 
+import ComponentA from './Components/UseReducer/ComponentA';
+import ComponentB from './Components/UseReducer/ComponentB';
+// import CounterThree from './CounterThree';
+// import CounterTwo from './Components/UseReducer/CounterTwo'; 
 // import CounterOne from './Components/UseReducer/CounterOne';
 // import ComponentA from './Components/UseContext/ComponentA';
 // import DataFetching from './Components/DataFetching';
@@ -12,11 +15,29 @@ import CounterTwo from './Components/UseReducer/CounterTwo';
 // import HookUseEffect from './Components/HookUseEffect';
 // import HookMouse from './Components/HookMouse';
 // import MouseComntainer from './Components/MouseComntainer';
+// export const UserContext = React.createContext()
+// export const profileContext = React.createContext()
 
-export const UserContext = React.createContext()
-export const profileContext = React.createContext()
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    case "reset":
+      return initialState;
+    default:
+      return state;
+  }
+}
+
+export const CountContext = React.createContext()
 
 function App() {
+
+  const [count, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="App">
       {/* <HookCounter /> <br/>
@@ -35,8 +56,16 @@ function App() {
         </profileContext.Provider>
       </UserContext.Provider> 
       <CounterOne />
-      */}
       <CounterTwo />
+      <CounterThree />
+      */}
+
+      <CountContext.Provider value = {{countValue: count, countDispatch: dispatch}} >
+        <ComponentA />
+        <ComponentB />
+      </CountContext.Provider>
+
+
     </div>
   );
 }
