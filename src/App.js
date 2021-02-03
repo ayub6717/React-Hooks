@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import ClassTimer from './Components/UseRef/ClassTimer';
+import FocusInput from './Components/UseRef/FocusInput';
+import HookTimer from './Components/UseRef/HookTimer';
 // import ComponentA from './Components/UseReducer/ComponentA';
 // import ComponentB from './Components/UseReducer/ComponentB';
 // import DataFetching from './Components/UseReducer/DataFetching';
-import Callback from './Components/UseReducer/UseCallback_With_UseMemo';
+// import Callback from './Components/UseReducer/UseCallback_With_UseMemo';
 // import CounterThree from './CounterThree';
 // import CounterTwo from './Components/UseReducer/CounterTwo'; 
 // import CounterOne from './Components/UseReducer/CounterOne';
@@ -65,10 +68,13 @@ function App() {
         <ComponentB />
       </CountContext.Provider>
       <DataFetching />
+      <Callback />
       */}
 
-    
-      <Callback />
+      <FocusInput />
+      <ClassTimer />
+      <HookTimer />
+  
 
 
     </div>
