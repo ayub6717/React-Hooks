@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import ClassTimer from './Components/UseRef/ClassTimer';
-import FocusInput from './Components/UseRef/FocusInput';
-import HookTimer from './Components/UseRef/HookTimer';
+import React from "react";
+import "./App.css";
+import UserForm from "./Components/CustomHook/UserForm";
+// import ClassTimer from './Components/UseRef/ClassTimer';
+// import FocusInput from './Components/UseRef/FocusInput';
+// import HookTimer from './Components/UseRef/HookTimer';
 // import ComponentA from './Components/UseReducer/ComponentA';
 // import ComponentB from './Components/UseReducer/ComponentB';
 // import DataFetching from './Components/UseReducer/DataFetching';
 // import Callback from './Components/UseReducer/UseCallback_With_UseMemo';
 // import CounterThree from './CounterThree';
-// import CounterTwo from './Components/UseReducer/CounterTwo'; 
+// import CounterTwo from './Components/UseReducer/CounterTwo';
 // import CounterOne from './Components/UseReducer/CounterOne';
 // import ComponentA from './Components/UseContext/ComponentA';
 // import DataFetching from './Components/DataFetching';
@@ -40,7 +41,6 @@ import HookTimer from './Components/UseRef/HookTimer';
 // export const CountContext = React.createContext()
 
 function App() {
-
   // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -69,14 +69,12 @@ function App() {
       </CountContext.Provider>
       <DataFetching />
       <Callback />
-      */}
-
       <FocusInput />
       <ClassTimer />
       <HookTimer />
-  
+      */}
 
-
+      <UserForm />
     </div>
   );
 }
