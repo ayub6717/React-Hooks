@@ -1,7 +1,8 @@
-import React, {useReducer} from 'react';
+import React from 'react';
 import './App.css';
-import ComponentA from './Components/UseReducer/ComponentA';
-import ComponentB from './Components/UseReducer/ComponentB';
+// import ComponentA from './Components/UseReducer/ComponentA';
+// import ComponentB from './Components/UseReducer/ComponentB';
+import DataFetching from './Components/UseReducer/DataFetching';
 // import CounterThree from './CounterThree';
 // import CounterTwo from './Components/UseReducer/CounterTwo'; 
 // import CounterOne from './Components/UseReducer/CounterOne';
@@ -18,25 +19,25 @@ import ComponentB from './Components/UseReducer/ComponentB';
 // export const UserContext = React.createContext()
 // export const profileContext = React.createContext()
 
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
-    case "decrement":
-      return state - 1;
-    case "reset":
-      return initialState;
-    default:
-      return state;
-  }
-}
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case "increment":
+//       return state + 1;
+//     case "decrement":
+//       return state - 1;
+//     case "reset":
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// }
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
 function App() {
 
-  const [count, dispatch] = useReducer(reducer, initialState);
+  // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div className="App">
@@ -58,12 +59,13 @@ function App() {
       <CounterOne />
       <CounterTwo />
       <CounterThree />
-      */}
-
       <CountContext.Provider value = {{countValue: count, countDispatch: dispatch}} >
         <ComponentA />
         <ComponentB />
       </CountContext.Provider>
+      */}
+
+      <DataFetching />
 
 
     </div>
