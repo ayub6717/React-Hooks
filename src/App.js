@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 // import ComponentA from './Components/UseReducer/ComponentA';
 // import ComponentB from './Components/UseReducer/ComponentB';
-import DataFetching from './Components/UseReducer/DataFetching';
+// import DataFetching from './Components/UseReducer/DataFetching';
+import Callback from './UseCallback_With_UseMemo';
 // import CounterThree from './CounterThree';
 // import CounterTwo from './Components/UseReducer/CounterTwo'; 
 // import CounterOne from './Components/UseReducer/CounterOne';
@@ -63,9 +64,11 @@ function App() {
         <ComponentA />
         <ComponentB />
       </CountContext.Provider>
+      <DataFetching />
       */}
 
-      <DataFetching />
+    
+      <Callback />
 
 
     </div>
