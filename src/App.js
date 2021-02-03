@@ -3,7 +3,7 @@ import './App.css';
 // import ComponentA from './Components/UseReducer/ComponentA';
 // import ComponentB from './Components/UseReducer/ComponentB';
 // import DataFetching from './Components/UseReducer/DataFetching';
-import Callback from './UseCallback_With_UseMemo';
+import Callback from './Components/UseReducer/UseCallback_With_UseMemo';
 // import CounterThree from './CounterThree';
 // import CounterTwo from './Components/UseReducer/CounterTwo'; 
 // import CounterOne from './Components/UseReducer/CounterOne';
