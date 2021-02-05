@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import useInput from './useInput';
 
 function UserForm() {
@@ -15,14 +15,14 @@ function UserForm() {
 		<div>
       <form onSubmit={submitHandler}>
 				<div>
-					<label>First Name</label>
+					<label>First Name: </label>
 					<input
             type="text"
             {...bindFirstName}
 					/>
 				</div>
 				<div>
-					<label>Last Name</label>
+					<label>Last Name: </label>
 					<input
             type="text"
             {...bindLastName}
